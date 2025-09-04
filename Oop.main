@@ -1,0 +1,29 @@
+package Main;
+
+public class main1 {
+    
+    public static void main(String[] args) {
+        
+        Person a = new Person();
+        a.Firstname = "Rjay";
+        a.Lastname = "Lucero";
+        a.Sex = 'M';
+        a.Age = 22;
+
+        Person aa = new Person();
+        aa.Firstname = "John";
+        aa.Lastname = "Lucero";
+        aa.Sex = 'M';
+        aa.Age = 20;
+
+        OOTD b = new OOTD();
+        b.shirt = "Lv Shirt";
+        b.shoes = "Jordan";
+        b.watch = "Rolex";
+        b.quantity = 1;
+
+        System.out.println(a.Firstname);
+        System.out.println(aa.Firstname);
+        System.out.println(b.watch);
+    }
+}
