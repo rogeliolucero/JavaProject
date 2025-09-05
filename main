@@ -1,0 +1,21 @@
+package Main;
+
+import java.util.Scanner;
+public class main1 {
+    
+    public static void main(String[] args) {
+        
+        Scanner eme = new Scanner(System.in);
+
+        System.out.print("What brand do you want? : ");
+        String Brand = eme.nextLine();
+        System.out.print("what memory card do you want?: ");
+        String Memory = eme.nextLine();
+        System.out.print("how much capacity do you preferred? : ");
+        int Storage = eme.nextInt();
+          System.out.print("How big do you want computer display?: ");
+        float Display = eme.nextFloat();
+
+        Computer ab = new Computer(Brand, Memory,Storage,Display);
+    }
+}
