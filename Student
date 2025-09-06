@@ -1,0 +1,19 @@
+package Main;
+
+
+public class main1 {
+    
+    public static void main(String[] args) {
+        
+     Student s = new Student("Rogelio", "Lucero", 2024, "Bsit", 4, 90, 85);
+     Student s1 = new Student("John Carlo", "Lucero", 2025, "BS Crim", 2, 95, 92);
+     Student s2 = new Student("Lurenz", "Aviles", 2025, "BSIT", 2, 89, 85);
+     s2.introduceSelf();
+     s2.EvaluateGrade();
+     s.introduceSelf();
+     s.EvaluateGrade();
+     
+     }
+     
+
+  }
