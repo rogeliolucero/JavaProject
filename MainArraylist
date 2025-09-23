@@ -1,0 +1,37 @@
+package arraylist;
+
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+
+        ArrayList<String> names = new ArrayList<String>();
+        names.add("Rogelio");
+        names.add("John");
+        names.add("Jem");
+
+
+        for (String n:names){
+            System.out.println(n);
+        }
+    
+       ArrayList<Integer> num = new ArrayList<Integer>();
+       num.add(1);
+       num.add(10);
+       num.add(16);
+
+       ArrayList<Student> Students = new ArrayList<Student>();
+       Students.add(new Student("Luis", "BSIT"));
+       Students.add(new Student("Lurenz", "BSIT"));
+       Students.add(new Student("Geomar", "BSIT"));
+
+       for(Student s:Students){ 
+        s.Introduce();
+
+       }
+
+
+
+    }
+
+}
