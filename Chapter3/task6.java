@@ -1,3 +1,4 @@
+package Chapter3;
 public class Task6 {
     /**
      * @param args
