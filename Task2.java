@@ -1,16 +1,16 @@
 
 public class Task2 {
-    public static void main(String[] args) {
-        char h = 'H';
-        int e= 3;
-        short i = 1;
-        float point = 2.0f;
-        byte o = 0 ;
-        boolean thought= true;
+    
+    public static void main(String[] args) throws Exception {
+        byte zero = 0;
+        int one = 1;
+        short three = 3;
+        char letter = 'r';
+        double point = 2.0;
+        boolean logic= true;
 
-            String output = "" + h + e + i + i + o + " w" + o + "r" + i + "d "  + point + " " + thought;
-       
+        String output = "" + 'H' + three + one + one + zero + " " +'w' + zero + letter + one + 'd' + " "+ point + " "+ logic ; 
+
         System.out.println(output);
-
     }
 }
