@@ -3,38 +3,34 @@ package Chapter3;
 import java.util.Scanner;
 
 public class Task5 {
-
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner eme = new Scanner(System.in);
         
-        System.out.println("--- Largest Number Finder ---");
+        System.out.print("Number1: ");
+        int num1 = eme.nextInt();
+
+        System.out.print("Number2: ");
+        int num2 = eme.nextInt();
+
+        System.out.print("Number3: ");
+        int num3 = eme.nextInt();
         
-        System.out.print("Enter the first number (A): ");
-        double a = scanner.nextDouble();
-        
-        System.out.print("Enter the second number (B): ");
-        double b = scanner.nextDouble();
-        
-        System.out.print("Enter the third number (C): ");
-        double c = scanner.nextDouble();
-        
-        scanner.close();
-        
-        System.out.println("-----------------------------");
-        
-        if (a == b && b == c) {
-            System.out.println("All numbers are equal");
-        } 
-        else if (a >= b && a >= c) {
-            System.out.println("The largest number is: " + a);
-        } 
-        else if (b >= a && b >= c) {
-            System.out.println("The largest number is: " + b);
-        } 
-        else {
-            System.out.println("The largest number is: " + c);
+         if (num1 == num2 && num2 == num3){
+            System.out.println("All number is Equal");
         }
-        
-        System.out.println("-----------------------------");
+    
+       else if (num1 >= num2 && num1 >= num3){
+            System.out.println(" The Largest Number is : " + num1);
+        }
+         else if (num2 >= num1 && num2 >= num3){
+            System.out.println(" The Largest Number is : " + num2);
+        }
+         else {
+            System.out.println(" The Largest Number is : " + num3);
+        }
+       
+        eme.close();
+
     }
+
 }
