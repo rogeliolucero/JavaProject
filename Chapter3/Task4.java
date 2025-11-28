@@ -1,31 +1,31 @@
 package Chapter3;
+
 import java.util.Scanner;
 
-public class Task4 {
+public class Task4{
 
-    public static boolean isPalindrome(String originalString) {
-        StringBuilder sb = new StringBuilder(originalString);
-        sb.reverse();
-        String reversedString = sb.toString();
-        
-        return originalString.equals(reversedString);
+    public static boolean isPalindrome(String originalString){
+    StringBuilder s = new StringBuilder(originalString);
+    s.reverse();
+    String reversedString = s.toString();
+
+    return originalString.equals(reversedString);
+    
     }
-
     public static void main(String[] args) {
         Scanner keme = new Scanner(System.in);
-        
-        System.out.println("Enter a string (e.g., dad, level, 020):");
-        String inputString = keme.nextLine(); 
-        
-        boolean isPal = isPalindrome(inputString);
-        
-        if (isPal) {
-            System.out.println("The input string '" + inputString + "' is a palindrome.");
-        } else {
-            System.out.println("The input string '" + inputString + "' is not a palindrome.");
+
+        System.out.print("Input String : ");
+        String input =keme.nextLine();
+
+        boolean pal = isPalindrome(input);
+
+        if (pal){
+            System.out.print("The input string " + input + " " + "is a polindrome");
         }
-        
-        keme.close();
+        else {
+            System.out.print("The input string "+ input + " " + "is a not polindrome");
+        }
     }
 }
 
