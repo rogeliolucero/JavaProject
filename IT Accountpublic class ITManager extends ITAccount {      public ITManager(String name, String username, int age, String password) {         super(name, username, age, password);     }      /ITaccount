@@ -1,0 +1,27 @@
+public class ITManager extends ITAccount {
+
+    public ITManager(String name, String username, int age, String password) {
+        super(name, username, age, password);
+    }
+
+    // METHOD OVERRIDING (POLYMORPHISM)
+    @Override
+    public void addUser(String name, String username, int age, String password) {
+        System.out.println("User successfully registered!");
+        System.out.println("Username: " + username);
+    }
+
+    @Override
+    public boolean authenticate(String username, String password) {
+        return getUsername().equals(username) && getPassword().equals(password);
+    }
+
+    @Override
+    public void showInfo() {
+        System.out.println("\n--- USER INFORMATION ---");
+        System.out.println("Name: " + getName());
+        System.out.println("Username: " + getUsername());
+        System.out.println("Age: " + getAge());
+        System.out.println("Role: IT Manager");
+    }
+}
