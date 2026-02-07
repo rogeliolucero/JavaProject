@@ -1,0 +1,45 @@
+  public abstract class ITAccount {
+
+    // ENCAPSULATED ATTRIBUTES
+    private String name;
+    private String username;
+    private int age;
+    private String password;
+
+    // CONSTRUCTOR
+    public ITAccount(String name, String username, int age, String password) {
+        this.name = name;
+        this.username = username;
+        this.age = age;
+        this.password = password;
+    }
+
+    // GETTERS
+    public String getName() {
+        return name;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    protected String getPassword() {
+        return password;
+    }
+
+    // SETTERS
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    // VIRTUAL METHODS (ABSTRACT)
+    public abstract void addUser(String name, String username, int age, String password);
+
+    public abstract boolean authenticate(String username, String password);
+
+    public abstract void showInfo();
+}
